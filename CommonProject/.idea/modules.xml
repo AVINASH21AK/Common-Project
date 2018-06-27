@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CommonProject.iml" filepath="$PROJECT_DIR$/CommonProject.iml" />
-      <module fileurl="file://D:\Android_Examples\Avinash Kahar\Common Project\CommonProject\Relience.iml" filepath="D:\Android_Examples\Avinash Kahar\Common Project\CommonProject\Relience.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

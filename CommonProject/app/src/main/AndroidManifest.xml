@@ -58,7 +58,6 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="9d3371cdcd139ba90cda5634ceab830a2e61048a" />
-        <!-- ELITE_INFOWORLD_Key android:value="9d3371cdcd139ba90cda5634ceab830a2e61048a" -->
 
     </application>
 
