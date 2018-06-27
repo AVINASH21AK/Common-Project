@@ -37,10 +37,7 @@ android {
         multiDexEnabled true
     }
 
-    dexOptions {
-        incremental true
-        javaMaxHeapSize "4g"
-    }
+
 
     buildTypes {
         release {
@@ -53,46 +50,46 @@ android {
 dependencies {
 
     /*---------- Libraries for Design ------------*/
-    compile "com.android.support:appcompat-v7:$rootProject.supportV7Version"
+    implementation "com.android.support:appcompat-v7:$rootProject.supportV7Version"
 
     //for - DrawerLayout, fragment with tabbar, viewpager
-    compile "com.android.support:design:$rootProject.designVersion"
+    implementation "com.android.support:design:$rootProject.designVersion"
 
     // multi dex error resolve
-    compile 'com.android.support:multidex:1.0.1'
+    implementation 'com.android.support:multidex:1.0.1'
 
 
     /*---------- 3rd Party Libraries ------------*/
 
     //crashlytics fabric
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
         transitive = true;
     }
 
     //recycleview
-    compile "com.android.support:recyclerview-v7:$rootProject.recyclerviewV7Version"
+    implementation "com.android.support:recyclerview-v7:$rootProject.recyclerviewV7Version"
 
     //carview
-    compile "com.android.support:cardview-v7:$rootProject.cardviewV7Version"
+    implementation "com.android.support:cardview-v7:$rootProject.cardviewV7Version"
 
     // for the image loading
-    compile 'com.facebook.fresco:fresco:0.11.0'
+    implementation 'com.facebook.fresco:fresco:0.11.0'
 
     // for the token and notification
-    compile "com.google.firebase:firebase-messaging:$rootProject.playServicesVersion"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.playServicesVersion"
 
     //analytics  - https://developers.google.com/analytics/devguides/collection/android/v4/
-    compile "com.google.android.gms:play-services-analytics:$rootProject.playServicesVersion"
+    implementation "com.google.android.gms:play-services-analytics:$rootProject.playServicesVersion"
 
     //app-updater Check App new Version Available  - https://stackoverflow.com/questions/41296491/how-to-force-update-in-android-application-if-new-version-is-available
-    compile 'org.jsoup:jsoup:1.9.1'
-    compile 'com.g00fy2:versioncompare:1.2.5'
+    implementation 'org.jsoup:jsoup:1.9.1'
+    implementation 'com.g00fy2:versioncompare:1.2.5'
 
     //App Rater
-    compile 'com.github.hotchemi:android-rate:1.0.1'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
 
     //butterknife - BindView
-    compile 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 
