@@ -34,7 +34,7 @@ public class App extends Application {
     public static String TAG = "APP";
     static Context context;
     private static App mInstance;
-    public static String PREF_NAME = "Relience_PREFERENCE";
+    public static String PREF_NAME = "Common_PREFERENCE";
     public static SharePrefrences sharePrefrences;
     public static String App_mode = "1";  //1 for Production and 2 for Development
     public static String App_plateform = "2";  //1 for IOS and 2 for Android
