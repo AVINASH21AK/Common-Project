@@ -31,6 +31,7 @@ import java.util.Random;
 
 public class App extends Application {
 
+
     public static String TAG = "APP";
     static Context context;
     private static App mInstance;

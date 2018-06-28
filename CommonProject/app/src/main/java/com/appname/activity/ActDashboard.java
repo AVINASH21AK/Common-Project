@@ -12,6 +12,7 @@ import hotchemi.android.rate.OnClickButtonListener;
 
 public class ActDashboard extends BaseActivity {
 
+
     String TAG = "ActDashboard";
 
     @Override
