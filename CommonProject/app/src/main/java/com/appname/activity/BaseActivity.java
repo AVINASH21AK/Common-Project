@@ -34,12 +34,12 @@ public class BaseActivity extends AppCompatActivity {
 
     protected String TAG = "BaseActivity";
 
-    @BindView(R.id.drawer_layout) DrawerLayout drawer;
-    @BindView(R.id.left_drawer) RelativeLayout left_drawer;
-    @BindView(R.id.rl_baseToolbar) RelativeLayout rl_baseToolbar;
-    @BindView(R.id.ll_SubMainContainer) LinearLayout ll_SubMainContainer;
-    @BindView(R.id.ivMenu) ImageView ivMenu;
-    @BindView(R.id.tvTitle) TextView tvTitle;
+    protected DrawerLayout drawer;
+    protected RelativeLayout left_drawer;
+    protected RelativeLayout rl_baseToolbar;
+    protected LinearLayout ll_SubMainContainer;
+    protected ImageView ivMenu;
+    protected TextView tvTitle;
 
 
     //App Updater
@@ -53,7 +53,21 @@ public class BaseActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        baseClickInitialize();
         baseClickEvent();
+    }
+
+    public void baseClickInitialize(){
+        try{
+           drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            left_drawer = (RelativeLayout) findViewById(R.id.left_drawer);
+            rl_baseToolbar = (RelativeLayout) findViewById(R.id.rl_baseToolbar);
+            ll_SubMainContainer = (LinearLayout) findViewById(R.id.ll_SubMainContainer);
+            ivMenu = (ImageView) findViewById(R.id.ivMenu);
+            tvTitle = (TextView) findViewById(R.id.tvTitle);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void baseClickEvent(){
